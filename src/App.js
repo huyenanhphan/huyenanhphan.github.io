@@ -3,7 +3,6 @@
 
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
-import { loadFull } from 'tsparticles';
 import Skills from './containers/skills';
 import Portfolio from './containers/portfolio';
 import Resume from './containers/resume';
