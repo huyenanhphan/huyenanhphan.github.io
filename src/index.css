@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+:root{
+
+    --yellow-theme-bkg-color: #f8afc6f9;
+    --pink-theme-bkg-color: rgb(255, 201, 201);
+    --pink-theme-main-color: #c95c61;
+    --yellow-theme-main-color: #f9d423;
+    --pink-theme-sub-text-color: #5c3535;
+    --pink-theme-nav-bkg-color: #ed8c8c;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html{
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body{
+  background: var(--pink-theme-bkg-color);
+  height: 100%
+}
+
+#root{
+  height: 100%;
+}

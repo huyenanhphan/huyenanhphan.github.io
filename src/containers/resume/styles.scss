@@ -1,0 +1,35 @@
+.resume {
+    // ... other styles ...
+  
+    .resume-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+  
+    // .resume-pic {
+    // }
+  
+    .download-button {
+      padding: 10px 20px;
+      background-color: #df799b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      transition: background-color 0.3s;
+      text-transform: uppercase; 
+      margin: 45px;
+  
+      &:hover {
+        background-color: #b64a63;
+      }
+    }
+  
+  }
+  

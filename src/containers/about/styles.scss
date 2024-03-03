@@ -1,0 +1,100 @@
+.about{
+    &__content{
+        display: flex;
+        gap: 20px;
+        padding: 40px;
+        width: 100%;
+
+        &__personalWrapper, &__servicesWrapper{
+            width: 50%;
+
+        }
+        &__personalWrapper{
+            h3{
+                margin-bottom: 10px;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--pink-theme-main-color);
+            }
+            h3.personalInformationHeaderText{
+                padding-top: 20px;
+                
+            }
+            p{
+                color: rgb(125, 59, 70);
+                font-size: 1.8rem;
+                line-height: 1.65;
+                padding-bottom: 20px;
+                border-bottom: 1px dashed rgb(145, 44, 66);
+            }
+
+            ul > li{
+                line-height: 2rem;
+                margin-bottom: 15px;
+
+                span.Title, span.Value{
+                    font: optional;
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.5px;
+                    border-bottom: 3px solid rgb(237, 156, 180);
+                    position: relative;
+                    display: inline-block;
+                    margin-right: 16px;
+                    padding-bottom: 1px;
+                    color: rgb(125, 59, 70);
+                }
+                span.Value{
+                    border: none;
+                }
+            }
+        }
+    
+        &__servicesWrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            margin-top: 50px;
+            
+
+            &__innerContent{
+                width: 350px;
+                height: 350px;
+                border-radius: 50%;
+
+                
+
+                
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    .about__content{
+        flex-direction: column;
+
+        &__personalWrapper, &__servicesWrapper{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            ul >li{
+                width: 100%;
+                
+            }
+        }
+        &__servicesWrapper{
+            margin: 101px 0px;
+            &__innerContent{
+                width: 250px;
+                height: 250px;
+                background-color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+
+
+// .home {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 0 20px;
+//     height: 60vh; /* This will make the section the height of the viewport */
+// }
+
+//   .home h1 {
+//     font-size: 2.5rem; /* Adjust the font size as needed */
+//     color: rgb(236, 96, 96);
+//     overflow: hidden; /* Ensure the overflow text is hidden */
+//     white-space: normal; /* Keep the text in a single line */
+//     word-break: break-word;
+//     overflow-wrap: break-word;
+//     width: 0; /* Start with a width of 0 */
+//     animation: typeEffect 3s steps(30) forwards ; /* Animation for typing and cursor blink */
+//   }
+//   @media only screen and (max-width: 550px) {
+//     .home h1 {
+//       font-size: 2rem; /* Smaller font size for small screens */
+// line-height: 4rem;
+//     }
+//   }
+  
+//   @media only screen and (min-width: 551px)  {
+//     .home h1 {
+//       font-size: 2.5rem; /* Smaller font size for small screens */
+      
+//       line-height: 5rem;
+//     }
+//   }
+
+//   /* Responsive typography for even smaller screens */
+//   @media only screen and (max-width: 400px) {
+//     .home h1 {
+//       font-size: 1.5 rem; /* Even smaller font size for very small screens */
+//       line-height: 3rem;
+      
+//     }
+//   }
+  
+//   @keyframes typeEffect {
+//     from { width: 0; }
+//     to { width: 70%; } /* Animate to the full width of the text */
+//   }
+
+
+.home{
+  position: relative;
+  height: 100% ;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  &__text-wrapper{
+    display: flex;
+    // align-content: center;
+    // flex-direction: column;
+    justify-content: center;
+
+    h1{
+      color: var(--pink-theme-main-color);
+      margin: 0px;
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 6rem;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      align-content: center;
+      justify-content: center;
+      animation: typingEffectAnimation 3s steps(50, end) ;
+    }
+    h2{
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  &__contact-me{
+    display: flex;
+    justify-content: center;
+      // flex-direction: column;
+      // align-content: center;
+      margin-top: 15px;
+
+      button{
+        cursor: pointer;
+        background: transparent;
+        padding: 8px 40px;
+        font-size: 2rem;
+        color: var(--pink-theme-main-color);
+        border: 1.5px solid var(--pink-theme-main-color);
+        border-radius: 4px;
+        font-weight: 500;
+        
+        &:hover{
+          background: rgb(154, 100, 100);
+          color: rgb(249, 199, 199);
+          border: 2.5px solid var(--pink-theme-main-color);
+        }
+      }
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .home__text-wrapper{
+    h1{
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+  
+}
+@media only screen and (min-width: 551px) and (max-width: 768px){
+  .home__text-wrapper{
+    h1{
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+  }
+}
+@media only screen and (min-width: 769px){
+  .home__text-wrapper{
+    h1{
+      font-size: 4rem;
+      line-height: 6rem;
+    }
+  }
+  
+}
+@keyframes typingEffectAnimation{
+  from{
+    width: 0;
+  } to{
+    width: 100%;
+  }
+}
