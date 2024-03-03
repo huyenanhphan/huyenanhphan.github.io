@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBars, FaReact } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { HiX } from "react-icons/hi";

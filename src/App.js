@@ -14,10 +14,6 @@ import NavBar from './components/navBar';
 
 function App() {
 
-  const handleInit = async (main) => {
-    await loadFull(main);
-  }
-
   return (
     <div className="App">
 

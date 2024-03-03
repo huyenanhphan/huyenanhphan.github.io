@@ -92,7 +92,7 @@ const About = () => {
             }}
 
           >
-              <img className="image-small" src="/ava.jpg" alt="My picture" style={{ width: '310px', height: '400px', borderRadius: '5%', display:'flex'}}  />
+              <img className="image-small" src="/ava.jpg" alt="Avatar" style={{ width: '310px', height: '400px', borderRadius: '5%', display:'flex'}}  />
               </Animate>
             </div>
 
