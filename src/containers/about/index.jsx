@@ -10,10 +10,10 @@ const personalInfo = [{
   value: "Huyen Anh Phan"
 },
 
-{
-  label: "D.O.B",
-  value: "08/18/2003"
-},
+// {
+//   label: "D.O.B",
+//   value: "08/18/2003"
+// },
 {
   label: "Education",
   value: "Ungraduate student at Centennial College"
