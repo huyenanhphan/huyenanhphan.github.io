@@ -1,4 +1,112 @@
-.navbar{
+// .navbar{
+//     background-color: var(--yellow-theme-bkg-color);
+//     height: 80px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     font-size: 1.2rem;
+
+//     &__container{
+//         display: flex;
+//         align-items: center;        
+//         width: 100%;
+//         height: inherit;
+//         padding: 0 20px;
+//         flex:1;
+
+//         &__logo{
+//             cursor: pointer;
+//             color: var(--pink-theme-main-color);
+//             font-size: 15px;
+//             margin: 20px;
+//         }
+
+//         &__menu{
+//             display: flex;
+//             list-style: none;
+//             text-align: center;
+
+//             &__item{
+//                 line-height: 40px;
+//                 margin-right: 1.5rem;   
+//                 font-size: 1.6rem;
+
+
+//                 &::after{
+//                     content: '';
+//                     display: block;
+//                     width: 0;
+//                     height: 3px;
+//                     background: transparent;
+//                     transition: all 0.5s ease;
+//                 }
+
+//                 &:hover::after{
+//                     width: 100%;
+//                     background: var(--pink-theme-main-color);
+//                 }
+//                 &__links{
+//                     text-decoration: none;
+//                     color: var(--pink-theme-main-color);
+//                     padding:0.5rem;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .nav-icon{
+//     display: none;
+// }
+
+// @media only screen and (max-width: 768px)
+// {
+//     .navbar__container__menu{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         width: 100%;
+//         position: absolute;
+//         top: 80px;
+//         left:-110%;
+//         opacity: 1;
+//         transition: all 0.5s ease;
+
+//         &.active{
+//             background-color: black;
+//             left: 0px;
+//             opacity: 1;
+//         }
+
+//         &__item{
+//             border-bottom: 1px solid #fff;
+//             margin: 0px;
+//             padding: 20px 0px;
+//             }
+
+//             &:hover::after{
+//                 width: 100%;
+//                 background: var(--pink-theme-main-color);
+//             }
+//             &__links{
+//                 text-decoration: none;
+//                 color: var(--pink-theme-main-color);
+//                 padding:0.5rem;
+//             }
+        
+//     }
+//     .nav-icon{
+//         display: block;
+//         color: var(--pink-theme-main-color);
+//         padding-right: 20px;
+//         cursor: pointer;
+
+//     }
+    
+// }
+    
+
+.navbar {
     background-color: var(--yellow-theme-bkg-color);
     height: 80px;
     display: flex;
@@ -6,33 +114,32 @@
     align-items: center;
     font-size: 1.2rem;
 
-    &__container{
+    &__container {
         display: flex;
-        align-items: center;        
+        align-items: center;
         width: 100%;
         height: inherit;
         padding: 0 20px;
-        flex:1;
+        flex: 1;
 
-        &__logo{
+        &__logo {
             cursor: pointer;
             color: var(--pink-theme-main-color);
             font-size: 15px;
             margin: 20px;
         }
 
-        &__menu{
+        &__menu {
             display: flex;
             list-style: none;
             text-align: center;
 
-            &__item{
+            &__item {
                 line-height: 40px;
-                margin-right: 1.5rem;   
+                margin-right: 1.5rem;
                 font-size: 1.6rem;
 
-
-                &::after{
+                &::after {
                     content: '';
                     display: block;
                     width: 0;
@@ -41,67 +148,71 @@
                     transition: all 0.5s ease;
                 }
 
-                &:hover::after{
+                &:hover::after {
                     width: 100%;
                     background: var(--pink-theme-main-color);
                 }
-                &__links{
+
+                &__links {
                     text-decoration: none;
                     color: var(--pink-theme-main-color);
-                    padding:0.5rem;
+                    padding: 0.5rem;
                 }
             }
         }
     }
 }
 
-.nav-icon{
+.nav-icon {
     display: none;
 }
 
-@media only screen and (max-width: 768px)
-{
-    .navbar__container__menu{
+@media only screen and (max-width: 768px) {
+    .navbar__container__menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
         position: absolute;
         top: 80px;
-        left:-110%;
+        left: -110%;
         opacity: 1;
         transition: all 0.5s ease;
+        z-index: 1;
 
-        &.active{
-            background-color: #ecb2b2;
+        &.active {
+            background-color: rgb(227, 171, 181);
             left: 0px;
             opacity: 1;
         }
 
-        &__item{
+        &__item {
             border-bottom: 1px solid #fff;
             margin: 0px;
             padding: 20px 0px;
-            }
+        }
 
-            &:hover::after{
-                width: 100%;
-                background: var(--pink-theme-main-color);
-            }
-            &__links{
-                text-decoration: none;
-                color: var(--pink-theme-main-color);
-                padding:0.5rem;
-            }
-        
+        &:hover::after {
+            width: 100%;
+            background: var(--pink-theme-main-color);
+        }
+
+        &__links {
+            text-decoration: none;
+            color: var(--pink-theme-main-color);
+            padding: 0.5rem;
+        }
     }
-    .nav-icon{
+
+    .navbar__container {
+        position: relative;
+    }
+
+    .nav-icon {
         display: block;
         color: var(--pink-theme-main-color);
         padding-right: 20px;
         cursor: pointer;
-
+        z-index: 2;
     }
-    
 }
-    
