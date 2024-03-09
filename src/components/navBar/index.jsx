@@ -42,7 +42,7 @@ const Navbar = () => {
                 <div className="navbar__container">
                     <Link to={"/"} className="navbar__container__logo">
                         {/* <FaReact size={30} /> */}
-                        <h1>Huyen Anh Phan</h1>
+                        <h1>Anne Phan</h1>
                     </Link>
                 </div>
                 {/* <ul className={'navbar__container__menu ${toggleIcon ? "active" : ""} '}> */}
