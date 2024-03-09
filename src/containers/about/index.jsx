@@ -7,7 +7,7 @@ import './styles.scss';
 
 const personalInfo = [{
   label: "Name",
-  value: "Huyen Anh Phan"
+  value: "Anne Phan"
 },
 
 // {
