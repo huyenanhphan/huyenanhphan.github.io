@@ -9,7 +9,7 @@ const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = resumePath;
-    link.setAttribute('download', 'Huyen_Anh_Phan_Resume.pdf'); 
+    link.setAttribute('download', 'Anne_Phan_Resume.pdf'); 
     document.body.appendChild(link);
     link.click();
     link.remove();
