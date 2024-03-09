@@ -24,7 +24,7 @@ const personalInfo = [{
 },
 {
   label: "Email",
-  value: "molyhuyenanh03@gmail.com"
+  value: "annephan03@gmail.com"
 }];
 
 const IntroSummary = 'Hello, I am Anne Phan, currently pursuing a degree in Software Engineering Technology - AI at Centennial College. With a passion for technology and an ability for quick learning, I aspire to become either a full-stack developer or a data scientist. I bring dedication, strong multitasking skills, and a genuine enthusiasm for problem-solving to projects I undertake. Although I dont have much real experience in the field yet, my academic background and personal projects have equipped me with a solid understanding of software development principles and data analysis techniques. I am eager to leverage this foundation in a professional setting, where I can grow my skills further and make a tangible impact.';
