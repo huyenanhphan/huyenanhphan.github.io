@@ -33,7 +33,7 @@ const HeroSection = () => {
     />
                     </h1>
                     <p className="text-[#ADB7BE] text-lg mb-6 lg:text-xl">
-                        A Graduate Student in Software Engineering Technology - AI.
+                        An Undergraduate Student in Software Engineering Technology - AI.
                     </p>
                     <div>
                         <button className="px-4 py-2 rounded-full sm:w-fit w-full mr-4 mb-3 bg-gradient-to-br from-violet-500 to-pink-500 hover:from-purple-600 hover:to-pink-600">Hire Me</button>
