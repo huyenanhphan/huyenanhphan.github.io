@@ -25,7 +25,7 @@ const ContactSection = () => {
             
         </div>
         <div>
-            <form className='flex flex-col' >
+            <form className='flex flex-col'>
                 <div className="mb-4 ">
                 <FaPhoneAlt size={22} className='  block text-sm text-white  mb-2 ' />
                 <p className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'>+1 (647)-878-0772</p>
